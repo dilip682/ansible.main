@@ -48,3 +48,4 @@
   with_items: "{{ jenkins_plugins }}"
   when: jenkins_admin_password != ""
   notify: restart jenkins
+  tags: install-plugins
