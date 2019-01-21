@@ -1,6 +1,6 @@
 - hosts: jenkins
   vars:
-    jenkins_hostname: jenkins.example.com
+    jenkins_hostname: dilip6822c.mylabserver.com
   roles:
     # - role: geerlingguy.java
     #   become: yes
