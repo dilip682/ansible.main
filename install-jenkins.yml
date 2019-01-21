@@ -1,0 +1,10 @@
+- hosts: jenkins
+  vars:
+    jenkins_hostname: jenkins.example.com
+  roles:
+    # - role: geerlingguy.java
+    #   become: yes
+    # - role: geerlingguy.jenkins
+    #   become: yes
+    - role: ansible.jenkins
+      become: yes
