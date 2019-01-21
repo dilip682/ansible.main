@@ -7,6 +7,12 @@
       - initscripts
     state: present
 
+- name: Ensure Git is installed.
+  package:
+    name:
+      - git
+    state: present
+
 - name: Ensure Jenkins repo is installed.
   get_url:
     url: "{{ jenkins_repo_url }}"

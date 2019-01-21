@@ -6,6 +6,12 @@
       - apt-transport-https
     state: present
 
+- name: Ensure Git is installed.
+  apt:
+    name:
+      - git
+    state: present
+
 - name: Add Jenkins apt repository key.
   apt_key:
     url: "{{ jenkins_repo_key_url }}"
